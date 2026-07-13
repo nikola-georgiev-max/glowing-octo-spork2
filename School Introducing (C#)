@@ -1,58 +1,35 @@
 using System;
-using System.Windows.Forms;
 
-namespace SU_PeyoKrYavorov
+class Program
 {
-    public class Program
+    static void Main()
     {
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+        Console.Title = "СУ \"Пейо Кр. Яворов\"";
 
-            Form form = new Form();
-            form.Text = "СУ \"Пейо Кр. Яворов\"";
-            form.Width = 700;
-            form.Height = 450;
+        Console.WriteLine("====================================");
+        Console.WriteLine("      СУ \"Пейо Кр. Яворов\"");
+        Console.WriteLine("====================================\n");
 
-            Label title = new Label();
-            title.Text = "СУ \"Пейо Кр. Яворов\"";
-            title.Font = new System.Drawing.Font("Arial", 18, System.Drawing.FontStyle.Bold);
-            title.AutoSize = true;
-            title.Top = 20;
-            title.Left = 20;
+        Console.WriteLine("Средно училище \"Пейо Кр. Яворов\" е образователна");
+        Console.WriteLine("институция, която предлага качествено обучение");
+        Console.WriteLine("и възпитание на своите ученици.\n");
 
-            TextBox description = new TextBox();
-            description.Multiline = true;
-            description.ReadOnly = true;
-            description.ScrollBars = ScrollBars.Vertical;
-            description.Width = 630;
-            description.Height = 280;
-            description.Left = 20;
-            description.Top = 70;
+        Console.WriteLine("Училището носи името на известния български поет");
+        Console.WriteLine("Пейо Крачолов Яворов и насърчава развитието на");
+        Console.WriteLine("знания, умения и творческо мислене.\n");
 
-            description.Text =
-@"Средно училище ""Пейо Кр. Яворов"" е образователна институция,
-която предоставя качествено обучение и възпитание на своите ученици.
+        Console.WriteLine("В него се изучават общообразователни предмети,");
+        Console.WriteLine("чужди езици, информационни технологии, природни");
+        Console.WriteLine("и обществени науки.\n");
 
-Училището носи името на известния български поет Пейо Крачолов Яворов
-и насърчава развитието на знания, умения и творческо мислене.
+        Console.WriteLine("Учениците участват в различни състезания,");
+        Console.WriteLine("спортни прояви и извънкласни дейности.\n");
 
-В него се изучават общообразователни предмети, чужди езици,
-информационни технологии, природни и обществени науки.
+        Console.WriteLine("Основната цел на училището е да подготви младите");
+        Console.WriteLine("хора за успешно бъдеще чрез качествено образование,");
+        Console.WriteLine("дисциплина и уважение към общочовешките ценности.");
 
-Учениците участват в различни извънкласни дейности, състезания,
-спортни прояви и културни инициативи.
-
-Основната цел на училището е да подготви младите хора за успешно
-бъдеще чрез качествено образование, дисциплина и уважение към
-общочовешките ценности.";
-
-            form.Controls.Add(title);
-            form.Controls.Add(description);
-
-            Application.Run(form);
-        }
+        Console.WriteLine("\nНатиснете произволен клавиш, за да излезете...");
+        Console.ReadKey();
     }
 }
