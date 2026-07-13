@@ -1,2 +1,2 @@
-# glowing-octo-spork2
+# glowing-octo-spork
 Моята първа репозитория в github
