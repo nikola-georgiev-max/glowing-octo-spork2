@@ -1,26 +1,41 @@
 using System;
+using System.Text;
 
 class Program
 {
     static void Main()
     {
-        Console.Title = "СУ \"Пейо Кр. Яворов\"";
+        Console.OutputEncoding = Encoding.UTF8;
 
-        Console.WriteLine("====================================");
-        Console.WriteLine("      СУ \"Пейо Кр. Яворов\"");
-        Console.WriteLine("====================================\n");
+        Console.WriteLine("======================================================");
+        Console.WriteLine("                 СУ \"Пейо Кр. Яворов\"");
+        Console.WriteLine("======================================================");
+        Console.WriteLine();
 
         Console.WriteLine("Средно училище \"Пейо Кр. Яворов\" е образователна");
         Console.WriteLine("институция, която предлага качествено обучение");
-        Console.WriteLine("и възпитание на своите ученици.\n");
+        Console.WriteLine("и възпитание на своите ученици.");
+        Console.WriteLine();
 
         Console.WriteLine("Училището носи името на известния български поет");
         Console.WriteLine("Пейо Крачолов Яворов и насърчава развитието на");
-        Console.WriteLine("знания, умения и творческо мислене.\n");
+        Console.WriteLine("знания, умения и творческо мислене.");
+        Console.WriteLine();
 
-        Console.WriteLine("В него се изучават общообразователни предмети,");
-        Console.WriteLine("чужди езици, информационни технологии, природни");
-        Console.WriteLine("и обществени науки.\n");
-        Console.ReadKey();
+        Console.WriteLine("В него се изучават:");
+        Console.WriteLine("  • Общообразователни предмети");
+        Console.WriteLine("  • Чужди езици");
+        Console.WriteLine("  • Информационни технологии");
+        Console.WriteLine("  • Природни науки");
+        Console.WriteLine("  • Обществени науки");
+        Console.WriteLine();
+
+        Console.WriteLine("======================================================");
+        Console.WriteLine("      Благодарим Ви, че посетихте нашето училище!");
+        Console.WriteLine("======================================================");
+
+        Console.WriteLine();
+        Console.Write("Натиснете произволен клавиш за изход...");
+        Console.ReadKey(true);
     }
 }
